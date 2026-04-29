@@ -69,6 +69,6 @@ python scripts/predict.py --model-path artifacts/model.joblib --text "The team s
 
 ## Notes
 
-- The notebook has not been removed; it is preserved as provenance under `notebooks/original_assessment.ipynb`.
+- The original notebook can be found under `notebooks/original_assessment.ipynb`.
 - No trained model binaries, checkpoints, or caches are committed as part of this refactor.
 - Any fields not directly confirmed by the notebook or recorded outputs are marked as `TBD`.
