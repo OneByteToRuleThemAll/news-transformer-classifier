@@ -38,3 +38,6 @@ reports/
 *.log
 coverage.xml
 .coverage
+
+# Large media files
+*.mp4
