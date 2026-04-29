@@ -5,7 +5,6 @@ import re
 
 import numpy as np
 import pandas as pd
-from datasets import load_dataset
 
 from news_classifier.config import LABEL_NAMES, settings
 
@@ -42,6 +41,8 @@ def load_ag_news(
     test_sample: int | None = None,
     seed: int = settings.seed,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
+    from datasets import load_dataset
+
     dataset = load_dataset(settings.dataset_name)
     train_df = sample_frame(dataset["train"].to_pandas(), train_sample, seed)
     test_df = sample_frame(dataset["test"].to_pandas(), test_sample, seed + 1)

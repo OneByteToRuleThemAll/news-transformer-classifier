@@ -58,7 +58,7 @@ python scripts/predict.py --model-path artifacts/model.joblib --text "Stocks ris
 Serve the FastAPI app:
 
 ```bash
-uvicorn src.news_classifier.api:app --reload
+uvicorn news_classifier.api:app --app-dir src --reload
 ```
 
 Example prediction command:

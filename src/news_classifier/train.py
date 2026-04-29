@@ -3,17 +3,17 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-import joblib
 import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.pipeline import Pipeline
-from sklearn.svm import LinearSVC
 
 from news_classifier.config import LABEL_NAMES, TRANSFORMER_MODEL_NAME
 from news_classifier.data import load_ag_news
 
 
-def build_word_model() -> Pipeline:
+def build_word_model() -> Any:
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.pipeline import Pipeline
+    from sklearn.svm import LinearSVC
+
     return Pipeline(
         steps=[
             (
@@ -33,7 +33,11 @@ def build_word_model() -> Pipeline:
     )
 
 
-def build_char_model() -> Pipeline:
+def build_char_model() -> Any:
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.pipeline import Pipeline
+    from sklearn.svm import LinearSVC
+
     return Pipeline(
         steps=[
             (
@@ -133,10 +137,14 @@ def train_model(
 
 
 def save_model_bundle(bundle: dict[str, Any], output_path: Path) -> Path:
+    import joblib
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
     joblib.dump(bundle, output_path)
     return output_path
 
 
 def load_model_bundle(model_path: Path) -> dict[str, Any]:
+    import joblib
+
     return joblib.load(model_path)
