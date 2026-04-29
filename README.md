@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ## Commands
 
-Train a model artifact:
+Train a local SVM baseline artifact::
 
 ```bash
 python scripts/train.py --model-name char_ngram_svm --output-path artifacts/model.joblib
