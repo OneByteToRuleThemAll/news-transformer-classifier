@@ -2,7 +2,7 @@
 
 This repository is an applied transformer NLP text-classification project refactored from a standalone notebook workflow into a reproducible Python package, CLI scripts, tests, and a small API.
 
-The preserved source notebook lives at [notebooks/original_assessment.ipynb](/C:/Users/matty/news-transformer-classifier/notebooks/original_assessment.ipynb) and remains in the repository as provenance for the original assessment workflow.
+The preserved source notebook lives at [notebooks/original_assessment.ipynb](notebooks/original_assessment.ipynb) and remains in the repository as provenance for the original assessment workflow.
 
 ## Confirmed project details
 

@@ -11,7 +11,7 @@
 - Character baseline: TF-IDF character n-grams with `LinearSVC`
 - Transformer baseline: `textattack/distilbert-base-uncased-ag-news`
 - Random seed: `42`
-- Full hyperparameter details beyond the extracted source defaults: see [notebooks/original_assessment.ipynb](/C:/Users/matty/news-transformer-classifier/notebooks/original_assessment.ipynb)
+- Full hyperparameter details beyond the extracted source defaults: see [notebooks/original_assessment.ipynb](../notebooks/original_assessment.ipynb)
 
 ## Metrics table
 
