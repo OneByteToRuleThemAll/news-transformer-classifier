@@ -1,0 +1,20 @@
+AG News robustness benchmark summary
+===================================
+
+Best model by average perturbed macro-F1: transformer_distilbert
+  Clean accuracy: 0.9479
+  Clean macro-F1: 0.9479
+  Avg perturbed macro-F1: 0.9407
+  Worst perturbed macro-F1: 0.9306
+
+Runner-up model: char_ngram_svm
+  Clean accuracy: 0.9272
+  Clean macro-F1: 0.9271
+  Avg perturbed macro-F1: 0.9224
+  Worst perturbed macro-F1: 0.9169
+
+Interpretation notes:
+- Word n-grams usually score well on clean text.
+- Character n-grams should be more resistant to typos and vowel masking.
+- The transformer adds a stronger contextual baseline for comparison.
+- Word dropout is a strong stress test for all models.
