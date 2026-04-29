@@ -1,1 +1,40 @@
-*.mp4
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Hugging Face and model caches
+.cache/
+cache/
+hf_cache/
+.huggingface/
+**/.cache/huggingface/
+**/huggingface/
+
+# Model checkpoints and serialized models
+checkpoints/
+models/
+*.bin
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.joblib
+*.pkl
+
+# Generated artifacts
+artifacts/*
+!artifacts/.gitkeep
+outputs/
+reports/
+
+# Notebook and Python tooling artifacts
+*.log
+coverage.xml
+.coverage
